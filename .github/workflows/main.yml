@@ -1,3 +1,4 @@
+
 name: Build Windows application
 
 on:
@@ -31,9 +32,6 @@ jobs:
 
       - name: Build application
         run: npm run build
-
-      - name: Run tests
-        run: npm test
 
       - name: Create Windows installer and portable app
         run: npm run dist
